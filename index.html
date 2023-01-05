@@ -17,6 +17,315 @@
     <meta name="description"
         content="Freight Brokers is an online freight brokerage company that uses the internet to connect carriers and shippers with end users, such as shipping companies and businesses.">
     <title>Brale Freight Brokers</title>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: rival-sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+/*navbar*/
+.navbar {
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px;
+}
+
+.logo a img {
+    height: 160;
+    width: 160px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0f4392;
+}
+
+nav a:hover {
+    border-bottom: solid #DD1717 1px;
+    transition: 0.2s;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    --webkit-transition: all 0.3s ease-in-out;
+    background-color: #0f4392;
+}
+
+.wraper {
+    max-width: 100%;
+    min-width: 100%;
+    height: 780px;
+    background-image: url(../bgPic1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wraper h1 {
+    text-transform: uppercase;
+    font-size: 120px;
+    color: #ffff;
+    padding-bottom: 20px;
+}
+
+.wraper a {
+    width: 163px;
+    height: 56px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.wraper a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+}
+
+.about_us h1 {
+    font-size: 72px;
+    font-style: normal;
+    line-height: 86.4px;
+    text-align: center;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+}
+
+#brale {
+    padding-bottom: 2rem;
+}
+
+.about_us p {
+    width: 60%;
+    font-size: 16px;
+    white-space: break-spaces;
+    text-align: center;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    --webkit-font-smoothing: antialiased;
+    padding-bottom: 3rem;
+}
+
+.btn {
+    width: 163px;
+    font-family: sans-serif;
+    height: 62px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 53, 56);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 21.6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(63, 69, 71);
+
+}
+
+.services {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 80px 80px;
+    mix-height: 500px;
+    max-height: auto;
+}
+
+.services-iner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services-iner-left {
+    padding-right: 10rem;
+}
+
+.services-iner-left h1 {
+    font-size: 72px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 86.4px;
+    text-align: left;
+    font-style: normal;
+    padding-bottom: 2rem;
+}
+
+.services-iner-left p {
+    font-size: 16px;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    text-align: left;
+    white-space: break-spaces;
+    padding-bottom: 4rem;
+}
+
+.services-iner-right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+}
+
+.row h1 {
+    padding-right: 3.2rem;
+}
+
+#row1 {}
+
+.revbtn {
+    width: 163px;
+    height: 56px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.revbtn:hover {
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.careers {
+    background-image: url(../bgPc3.jpg);
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 12rem;
+    color: black;
+}
+
+.careers h1 {
+    font-size: 72px;
+    line-height: 86.2px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.careers p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    padding-bottom: 2rem;
+}
+
+/*Footer*/
+.foot {
+    display: flex;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+- footer h1 {
+    display: none;
+}
+
+#footimg {
+    height: 280px;
+    width: 280px;
+}
+
+.foot-cont {
+    line-height: 30px;
+    line-spaceing: 5px;
+    font-size: 16px;
+}
+
+.foot-cont address {
+    font-style: normal;
+}
+
+.wrapabout {
+    width: 100%;
+    height: 500px;
+    background-image: url("./bgabout1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(0, 0, 0);
+}
+
+.h1 {
+    text-transform: uppercase;
+    padding-bottom: 7rem;
+    padding-left: 7em;
+    line-height: 86px;
+    font-size: 72px;
+}
 </head>
 
 <body>
